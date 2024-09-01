@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --ModerateViolet: hsl(263, 55%, 52%);
+    --DarkGrayishBlue: hsl(217, 19%, 35%);
+    --DarkBlackishBlue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --LightWhite: hsl(0, 50%, 100%);
+    --HeavyWhite: hsl(0, 70%, 100%);
+    --LightGray: hsl(0, 0%, 81%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+body {
+    background: var(--LightGrayishBlue);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 0.8125rem;
+}
+
+.main-content {
+    padding: 1.56rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.tags, h2 {
+    color: var(--LightWhite);
+}
+
+.reviews, .header-reviews {
+    color: var(--HeavyWhite);
+}
+
+.new-header, .white-reviews, .new-tags, .new-reviews {
+    color: var( --DarkBlackishBlue);
+}
+
+.tags, .new-tags {
+    line-height: 0.1;
+}
+
+
+.card {
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 10px;
+    max-width: 350px;
+}
+
+.card:nth-of-type(1) {
+    background-color: var(--ModerateViolet);
+}
+
+.card:nth-of-type(2) {
+    background-color: var(--DarkGrayishBlue);
+}
+
+.card:nth-of-type(3), .card:nth-of-type(5) {
+    background-color: var(--White);
+}
+
+.card:nth-of-type(4) {
+    background-color: var(--DarkBlackishBlue);
+}
+
+img {
+    border-radius: 50%;
+}
