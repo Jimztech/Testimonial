@@ -17,6 +17,14 @@ body {
     font-size: 0.8125rem;
 }
 
+h1 {
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 500;
+}
+
 .main-content {
     padding: 1.56rem;
     display: flex;
@@ -35,10 +43,6 @@ body {
     color: var( --DarkBlackishBlue);
 }
 
-.tags, .new-tags {
-    line-height: 0.1;
-}
-
 
 .card {
     padding: 20px;
@@ -49,6 +53,9 @@ body {
 
 .card:nth-of-type(1) {
     background-color: var(--ModerateViolet);
+    background-image: url("/images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: right 20px top 5px;
 }
 
 .card:nth-of-type(2) {
@@ -65,4 +72,32 @@ body {
 
 img {
     border-radius: 50%;
+    margin-right: 1.25rem;
+    height: 2.5rem;
+}
+
+.daniel {
+    border: 2px solid var(--LightWhite);
+}
+.patrick {
+    border: 2px solid var(--ModerateViolet);
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;   
+}
+
+.text-content h2, .new-header {
+    margin-bottom: 0;
+}
+
+.tags, .new-tags {
+    margin-top: 0;
+    line-height: 1.3;
 }
